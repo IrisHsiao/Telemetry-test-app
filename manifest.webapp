@@ -1,0 +1,35 @@
+{
+	"version": "0.1",
+	"name": "Australia",
+	"description": "Your new awesome Open Web App",
+	"launch_path": "/index.html",
+	"appcache_path": "/offline.appcache",
+	"type": "certified",
+	"icons": {
+		"16": "/img/icons/ic_16px.png",
+		"48": "/img/icons/ic_48px.png",
+		"128": "/img/icons/ic_72px.png"
+	},
+	"developer": {
+		"name": "Your Name",
+		"url": "http://yourawesomeapp.com"
+	},
+	"locales": {
+		"es": {
+			"description": "Su nueva aplicación impresionante Open Web",
+			"developer": {
+				"url": "http://yourawesomeapp.com"
+			}
+		},
+		"it": {
+			"description": "Il vostro nuovo fantastico Open Web App",
+			"developer": {
+				"url": "http://yourawesomeapp.com"
+			}
+		}
+	},
+	"default_locale": "en",
+	"permissions": {
+		"settings": { "access": "readwrite" }
+	}
+}

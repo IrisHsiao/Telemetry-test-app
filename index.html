@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head manifest="offline.appcache">
+    <meta charset="utf-8">
+
+    <title>My App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">
+    <script src="/shared/js/settings_listener.js"></script>
+    <script src="/shared/js/advanced_telemetry_helper.js"></script>
+  </head>
+  <body>
+    <!-- Use this installation button to install locally without going
+         through the marketpace (see app.js) -->
+    
+    <!-- Write your application here -->
+
+    <!-- Battery indicator -->
+    <div id="indicator">
+      <span id="indicator-percentage"></span>
+    </div>
+
+    <!-- Example: multiple columns when screen is enough, one column when too small -->
+    <div class="container">
+      <div id="items" class="items">
+        <h2>Histogram Item List</h2>
+        <p>There are no items.</p>
+        <ul id="item-list"></ul>
+      </div>
+      <div class="controls">
+        <form id="item-form">
+          <h3>Please input numbers here</h3>
+          <input id="item" value=""><br>
+          <button type="submit" id="bn-simple" class="add-button">Simple</button>
+          <button type="submit" id="bn-linear" class="add-button">Linear</button>
+          <button type="submit" id="bn-exp" class="add-button">Exp</button>
+        </form>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript" data-main="js/init.js" src="js/lib/require.js"></script>
+  </body>
+</html>
