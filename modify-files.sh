@@ -4,13 +4,13 @@
 export GAIADIR=/home/irishsiao/Work/gaia
 
 #### Makefile #########
-sed -i 's/fxos\.telemetry\.mozilla\.org/fxos-telemetry-mozilla-org-fw81a67t0so2\.runscope\.net/g' $GAIADIR/Makefile
+sed -i 's/fxos\.telemetry\.mozilla\.org/fxos-telemetry-mozilla-org-xxxxxxxx\.runscope\.net/g' $GAIADIR/Makefile
 echo "====Makefile===="
 sed -n "157,158p" $GAIADIR/Makefile
 
 #### app_usage_metrics.js###########
 sed -i 's/AUM.DEBUG = false/AUM.DEBUG = true/g' $GAIADIR/apps/system/js/app_usage_metrics.js
-sed -i 's/fxos\.telemetry\.mozilla\.org/fxos-telemetry-mozilla-org-fw81a67t0so2\.runscope\.net/g' $GAIADIR/apps/system/js/app_usage_metrics.js
+sed -i 's/fxos\.telemetry\.mozilla\.org/fxos-telemetry-mozilla-org-xxxxxxxx\.runscope\.net/g' $GAIADIR/apps/system/js/app_usage_metrics.js
 #change AUM.REPORT_INTERVAL to 5 minutes
 sed -i 's/AUM.REPORT_INTERVAL = 14 \* 24 \* 60 \* 60 \* 1000/AUM.REPORT_INTERVAL = 5 \* 60 \* 1000/g' $GAIADIR/apps/system/js/app_usage_metrics.js
 #change AUM.RETRY_INTERVAL to 1 minute
@@ -24,8 +24,8 @@ sed -n "125,163p" $GAIADIR/apps/system/js/app_usage_metrics.js
 ####advanced_telemetry.js#################
 sed -i 's/AT.DEBUG = false/AT.DEBUG = true/g' $GAIADIR/apps/system/js/advanced_telemetry.js
 sed -i 's/AT.LOGINFO = false/AT.LOGINFO = true/g' $GAIADIR/apps/system/js/advanced_telemetry.js
-#sed -i 's/incoming\.telemetry\.mozilla\.org/incoming-telemetry-mozilla-org-fw81a67t0so2\.runscope\.net/g' $GAIADIR/apps/system/js/advanced_telemetry.js
-sed -i 's/https\:\/\/incoming\.telemetry\.mozilla\.org/http\:\/\/10\.247\.25\.98\:10001/g' $GAIADIR/apps/system/js/advanced_telemetry.js
+#sed -i 's/incoming\.telemetry\.mozilla\.org/incoming-telemetry-mozilla-org-xxxxxxxx\.runscope\.net/g' $GAIADIR/apps/system/js/advanced_telemetry.js
+sed -i 's/https\:\/\/incoming\.telemetry\.mozilla\.org/http\:\/\/xx\.xx\.xx\.xx\:10001/g' $GAIADIR/apps/system/js/advanced_telemetry.js
 #change REPORT_INTERVAL to 4 minutes
 sed -i 's/AT.REPORT_INTERVAL = 14 \* 24 \* 60 \* 60 \* 1000/AT.REPORT_INTERVAL = 4 \* 60 \* 1000/g' $GAIADIR/apps/system/js/advanced_telemetry.js
 #unchange REPORT_TIMEOUT, 20 seconds
