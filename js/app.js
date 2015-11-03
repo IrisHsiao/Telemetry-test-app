@@ -18,8 +18,8 @@
     //require('./install-button');
     var ath_ins = AdvancedTelemetryHelper;
     var count  = new AdvancedTelemetryHelper(ath_ins.HISTOGRAM_COUNT, 'mycount');
-    var linear = new AdvancedTelemetryHelper(ath_ins.HISTOGRAM_LINEAR, 'mylinear', 1, 1000, 10);
-    var exp    = new AdvancedTelemetryHelper(ath_ins.HISTOGRAM_EXP, 'myexp', 1, 1000, 10);
+    var linear = new AdvancedTelemetryHelper(ath_ins.HISTOGRAM_LINEAR, 'mylinear', 1, 1000, 12);
+    var exp    = new AdvancedTelemetryHelper(ath_ins.HISTOGRAM_EXP, 'myexp', 1, 500, 5);
     // Write your app here.
     window.performance.mark('contentInteractive');
     window.performance.mark('navigationInteractive');
