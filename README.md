@@ -12,7 +12,9 @@ Included within this Quick Start Guide is:
 
 ###2.  Modify the script###
 (Optional)
+
         vim modify-files.sh
+
 You may need to modify the parameters in the scripts for FTU Ping/App Usage/Telemetry testing
 
 ###3.  Install the app!###
