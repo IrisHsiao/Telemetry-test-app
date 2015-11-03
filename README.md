@@ -11,8 +11,9 @@ Included within this Quick Start Guide is:
         git clone https://github.com/IrisHsiao/Telemetry-test-app.git
 
 ###2.  Modify the script###
+(Optional)
         vim modify-files.sh
+You may need to modify the parameters in the scripts for FTU Ping/App Usage/Telemetry testing
 
-You may need to modify the Report URL in the script
 ###3.  Install the app!###
         use WebIDE tool, select "Open Packaged App..."
